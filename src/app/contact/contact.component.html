@@ -1,0 +1,47 @@
+<div class="contact-details" id="myContact">
+    <div class="contact-header">
+        Contact Me
+    </div>
+    
+    <p>If you want to know more about me or my work,<br> or if you would just
+        like to say hello 👋<br> send me a message. I'd love to hear from you.</p>
+    <div id="contact" class="about-content section">
+        <div class="contact-me">
+            <div class="contact-section"   >
+                <div class="contact-form" >
+                    <form [formGroup]="form"  action="javascript:void(0)" (submit)="send()">
+                        <div class="row">
+                            <label for="name">Name</label>
+                            <input required="" formControlName="name" id="name" type="text" placeholder="Your Name" />
+    
+                        </div>
+                        <div class="row">
+    
+                            <label for="email">Email</label>
+                            <input required="" formControlName="email" id="email" type="text" placeholder="Your@email.com">
+                        </div>
+                        <div class="row">
+                            <label for="message">Message</label>
+                            <textarea required="" formControlName="message" spellcheck="false" id="message" name="" id=""></textarea>
+                        </div>
+                        <button [class.disabled]="!isFormValid" disabled='{{isFormValid}}' type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="connect-with-me">
+                    <h2>Email</h2>
+                    <span>rohan15397 gmail.com</span>
+                    <h2>Social</h2>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/__rohan__prakash/" target="_blank"><img class="instagram" src="././assets/icons/insta.svg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/rohan15397/" target="_blank"><img class="linkedin" src="././assets/icons/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://github.com/Rohan7546" target="_blank"><img class="github" src="././assets/icons/github.svg" alt="github"></a>
+    
+                    </div>
+                    <a href="https://wa.me/919304969133?text=Hi"><img class="whatsapp" src="assets/icons/whatsapp.svg"
+                            alt="Whatsapp"></a>
+                    <span class="success-message" *ngIf="isMessageSent">Message sent</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+.navbar {
+    background-color: #FAFCFE;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    padding: 0px 20px;
+    position: fixed;
+    /* width: 100%; */
+    z-index: 99;
+}
+.navbar a {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+.navigation-menu li {
+    color: #8e8e8e;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navigation-menu ul {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+li:first-child {
+    color:   #1365FF !important;
+}
+.contact-section .contact-me {
+    background-color: #1365FF;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+@media (max-width: 800px) {
+    
+    .navbar {
+        width: 100%;
+        margin: 0;
+
+    }
+}
+.navbar-name {
+    color: #1365FF;
+    margin-left: 5px;
+    font-style: oblique;
+}
+
+@media (max-width: 600px) {
+    .navigation-menu ul {
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    } 
+    .cross-icon {
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        height: 4px;
+        width: 15px;
+    } 
+    .crossed::after{
+        display: inline-block;
+        content: "\00d7";
+        font-size: 20px;
+        text-align: center;
+    } 
+    .contact-section .contact-me {
+        padding: 5px 10px;
+    }
+}

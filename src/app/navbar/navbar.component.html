@@ -1,0 +1,16 @@
+<div class="navbar">
+    <div class="navbar-name"> &lt; Rohan /> </div>
+    <div class="navigation-menu">
+        <ul>
+            <li class="cross-icon" [class.cross-icon]="shouldDisplay" [class.crossed]="!shouldDisplay" *ngIf="isMobileView" (click)="onCrossClick()" >
+              
+            </li>
+            <li *ngIf="!shouldDisplay" class="home-link"><a class="nav-link active" id="home-nav-link" href="#home">Home</a></li>
+            <li *ngIf="!shouldDisplay" class="about-me-link"><a class="nav-link" id="about-nav-link" href="#aboutMe">About Me</a></li>
+            <li *ngIf="!shouldDisplay" class="project-link"><a class="nav-link" href="#project">Project</a></li>
+        </ul>
+    </div>
+    <div class="contact-section">
+        <span class="contact-me contact-link"><a href="#myContact" style="color: #eaeaea">Contact</a></span>
+    </div>
+</div>

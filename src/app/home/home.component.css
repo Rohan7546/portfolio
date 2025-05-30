@@ -1,0 +1,127 @@
+.home {
+    height: 100%;
+    /* margin-top: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (min-width:  840px) {
+    .home .introduction-container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:  840px) {
+    .home .introduction-container {
+        flex-direction: column-reverse;
+    }
+    .right-container {
+        display: flex;
+        justify-content: center;
+    }
+    .right-container img {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+    }
+    .left-container span, .left-container .after-greet::after {
+        font-size: 26px !important;
+        letter-spacing: 1px !important;
+        word-spacing: 1px !important;
+    }
+    .home .star .banner-front {
+        font-size: 12px !important;
+    }
+    .home {
+        margin-top: 40px;
+    }
+}
+
+.home .introduction-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.left-container  #my-span {
+    content: "Rohan Prakash";
+    color: #1664FE;
+    text-decoration: underline;
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.left-container span {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+.share-card .download-cv {
+    background-color: #1365FF;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.share-card .download-cv:hover, .share-card .whatsapp:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.share-card .whatsapp {
+    /* background-color: #1365FF; */
+    
+    padding: 12px 18px;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    color: #333;
+    margin-left: 10px;
+
+}
+.share-card .whatsapp a {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media (min-width: 1025px) {
+    .right-container img {
+        width: 600px;
+        height: 500px;
+    }
+}
+@media ((min-width: 840px) and (max-width: 1025px)) {
+    .right-container img {
+        width: 300px;
+        height: 500px;
+        object-fit: contain;
+    }
+}
+
+.home .star .banner-back {
+    background-color: #292A31;
+    height: 30px;
+    width: 100%;
+    rotate: 2deg;
+}
+.home .star .banner-front {
+    background-color: #1365FF;
+    height: 45px;
+    color: #fff;
+    font-size: 30px;
+    transform: translateY(-40px);
+    display: flex;
+    justify-content: space-around;
+    rotate: 0.25deg;
+    align-items: center;
+    
+}
+ 

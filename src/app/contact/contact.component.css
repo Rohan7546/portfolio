@@ -1,0 +1,165 @@
+.contact-details .contact-header {
+    
+    height: 120px;
+    background-color: #2f71f3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ @media (min-width: 737px) {
+    .contact-me input {
+        height: 50px;
+        width: 343px;
+        border-radius: 10px;
+        border-color: #2f71f3;
+        outline: none;
+    }
+    .contact-me {
+        width: 50%;
+    }
+}
+@media (max-width: 737px) {
+    .contact-me input {
+        height: 50px;
+        width: 143px;
+        border-radius: 10px;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-me {
+        width: 80%;
+    }
+}
+
+  .contact-me {
+    display: flex;
+    margin: 24px 0px;
+    width: 100%;
+    background-color: rgb(120, 153, 170);
+    box-shadow: 5px 4px 5px 4px #aac2f3;
+    padding: 34px;
+    border-radius: 10px;
+    background-color: #f8f0f1;
+    background-size: contain;
+
+
+}
+.contact-details p {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+}
+.contact-details .contact-me 
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+form textarea {
+    resize: none;
+    border-radius: 10px;
+    
+    font-size: 20px;
+ 
+}
+
+.contact-form label {
+    color: #333;
+    margin: 10px;
+}
+
+@media (min-width: 737px) {
+    form textarea {
+    width: 343px;
+    height: 200px;
+    
+    }
+}
+@media (max-width: 737px) {
+    form textarea {
+    width: 200px;
+    height: 200px;
+    }
+}
+
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    /* gap: 10px; */
+}
+
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: rgba(193, 217, 224, 0.25);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+}
+.connect-with-me img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.connect-with-me img:hover {
+    scale: 1.5;
+    margin: 10px;
+}
+
+.about-content .connect-with-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+ 
+.contact-form button {
+    background-color: #2f71f3;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.whatsapp {
+    height: 100px;
+    width: 100px;
+}
+.success-message {
+    color: green;
+    font-size: 22px;
+}
+
+.contact-section form .disabled {
+    cursor: none;
+    background-color: grey;
+}
